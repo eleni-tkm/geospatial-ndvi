@@ -80,3 +80,10 @@ If the function call remain as it is the outputs should be:
 Part 2 includes a conceptual workflow describing the steps to onboard data efficiently using the Sentinel Hub BYOC API. The link was created using [Canva](https://www.canva.com/)
 You can find the workflow [here](https://www.canva.com/design/DAHApMHdwdk/8I58NmAHh-QdGZAbVoC_RQ/view?utm_content=DAHApMHdwdk&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h0935883c7f).
 
+# Further Improvements
+- Use an API where CLMS is available to utilize only a CDSE API without external packages for gap filling
+- Add exceptions for example if the "global_median_ndvi.tiff" does not exists
+- Write both parts in one file
+- Further code improving and formatting
+- More detailed workflow that also mentions specific tools
+
