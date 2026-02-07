@@ -24,9 +24,9 @@ data gaps in the 10-daily NDVI composite
 - To be logged in the [Sentinel Browser](https://identity.dataspace.copernicus.eu/auth/realms/CDSE/protocol/openid-connect/auth?client_id=sh-5f8b630b-b083-49ed-b340-b8f01ecb81c4&redirect_uri=https%3A%2F%2Fbrowser.dataspace.copernicus.eu%2F%3Fzoom%3D5%26lat%3D50.16282%26lng%3D20.78613%26themeId%3DDEFAULT-THEME%26visualizationUrl%3DU2FsdGVkX19AMDCJrdtbCbM%252FylWzec6bZzTk5BkLcm5fh3NQ7hv1t5yTbq0G3yDudUCQ6j9ZdzxRPSRNAvSRGWdcIPC%252FW5M2wZCwkSpMmyVHj27efnsHX6qvFVEx5dNj%26datasetId%3DS2_L1C_CDAS%26demSource3D%3D%2522MAPZEN%2522%26cloudCoverage%3D30%26dateMode%3DSINGLE&state=3fef5d65-4fc3-48af-8164-515f83fcf45c&response_mode=fragment&response_type=code&scope=openid&nonce=3ae74422-c6a6-46c2-8e16-2267de80c600&code_challenge=P7uriuWSca1Czr6r-_BznmQQoNGEK2yfwEGjwRCdQPI&code_challenge_method=S256)
 or use the generated token and confirm identity
 - Since the Copernicus Land Monitoring Service (CLMS) - CLMS 300m product is not exposed via the openEO API, to run this code successfuly the user needs to:
-  - manually download the file `c_gls_NDVI-MEDIAN-LTS_1999-2017-0901_GLOBE_VGT-PROBAV_V2.2.1.tiff` from the Sentinel Browser and,
+  - manually download the file `c_gls_NDVI-MEDIAN-LTS_1999-2017-0901_GLOBE_VGT-PROBAV_V2.2.1.tiff` from the [Sentinel Browser](https://browser.dataspace.copernicus.eu/?zoom=9&lat=41.78155&lng=12.77161&themeId=DEFAULT-THEME&visualizationUrl=U2FsdGVkX19OdCTIYGGmzIu%2FdgoTiZBnOoa88qgaQPywlwDWaXuNMtZq1xGs2k1Zt8%2BJCyB5LjErJ%2FU1HLBddxGcMzCOeaG0WzJaTp7YpHPmE80z4WSfi4Am5mKZIDp9&datasetId=COPERNICUS_CLMS_NDVI_1KM_STATS_V2&demSource3D=%22MAPZEN%22&cloudCoverage=30&dateMode=SINGLE&clmsSelectedPath=COPERNICUS_CLMS_NDVI_1KM_STATS_V2&clmsSelectedCollection=COPERNICUS_CLMS_NDVI_1KM_STATS_V2) and,
   - Save it as "global_median_ndvi.tiff" in the same folder where the script exists
-- Inside the same folder with the script, a subfolder called 'data' should exists which contains the aoi.json. This is included in the repository but make sure it exists
+- Inside the same folder with the script, a subfolder called 'data' should exists which contains the aoi.json. This is included in the repository
 - The `.yml` file is an exact copy of the environment where the script was created and it will be used to create a clone-environment via Anaconda prompt
 
 - To parametrize the function please modify lines 57-61:
@@ -42,20 +42,19 @@ or use the generated token and confirm identity
 # How to run the script
 - Clone the repository in your preferable path using 
 - Open anaconda prompt 
-type `conda env create -f path\to\environment.yml  --name NameOfYourEnvironment`
-activate your environment with conda activate NameOfYourEnvironment
-cd to the folder in your PC that contains the clone of the repository
-type python assessment.py
+- Type: `conda env create -f path\to\environment.yml  --name NameOfYourEnvironment`
+- Activate your environment with `conda activate NameOfYourEnvironment`
+- Cd to the folder in your PC that contains the clone of the repository `cd path\to\assessment.py`
+- Type `python assessment.py`
 
 ## Warning!
 If this error occurs: 
 ```
-Traceback (most recent call last):
-  File "<string>", line 1, in <module>
-    import rasterio; print('Rasterio OK');
-    ^^^^^^^^^^^^^^^
-  File "C:\Users\HP-122024\anaconda3\envs\assessment\Lib\site-packages\rasterio\__init__.py", line 25, in <module>
-    from rasterio._base import DatasetBase
+  Traceback (most recent call last):
+    File "<stdin>", line 1, in <module>
+    File "C:\Users\..\Anaconda3\envs\NameOfYourEnvironment\lib\site-packages\rasterio\__init__.py", line 22, in <module>
+      from rasterio._base import gdal_version
+  ImportError: DLL load failed: The specified module could not be found.
 ```
 There is propably a conflict between the system's gdal version that the user has in the system path and the gdal version of the environment
 
