@@ -38,6 +38,7 @@ or use the generated token and confirm identity
       output_filename="ndvi_dekadal_august_2025_.tif"
   )
   ```
+  - The user can specify the output filename but the format (ending) should be explicitly defined. Only .nc, .tiff and .tif formats are supported
 # How to run the script
 - Clone the repository in your preferable path using 
 - Open anaconda prompt 
