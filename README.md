@@ -85,5 +85,6 @@ You can find the workflow [here](https://www.canva.com/design/DAHApMHdwdk/8I58Nm
 - Add exceptions for example if the "global_median_ndvi.tiff" does not exists
 - Write both parts in one file
 - Further code improving and formatting
+- Add sanity tests (visualize the data, print statistics)
 - More detailed workflow that also mentions specific tools
 
