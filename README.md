@@ -62,7 +62,7 @@ There is propably a conflict between the system's gdal version that the user has
 `where gdal*.dll`
 Output:
 ```
-C:\Users\...\anaconda3\envs\assessment\Library\bin\gdal.dll
+C:\Users\...\anaconda3\envs\NameOfYourEnvironment\Library\bin\gdal.dll
 C:\Users\...\AppData\Local\Programs\OSGeo4W\bin\gdal312.dll <--this should not exist
 ```
 - To fix, type inside your environment:
