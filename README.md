@@ -81,7 +81,7 @@ You can find the workflow [here](https://www.canva.com/design/DAHApMHdwdk/8I58Nm
 
 # Further Improvements
 - Use an API where CLMS is available to utilize only a CDSE API without external packages for gap filling
-- Add exceptions for example if the "global_median_ndvi.tiff" does not exists
+- Add exceptions for example if the "global_ndvi.tiff" does not exists
 - Write both parts in one file
 - Further code improving and formatting
 - Add sanity tests (visualize the data, print statistics)
