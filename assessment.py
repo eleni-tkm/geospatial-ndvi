@@ -63,7 +63,7 @@ generate_dekadal_ndvi(
 # ---------------------------------------------------------
 #optional part
 aoi_path = "data/aoi.json"                  
-clms_path = "global_median_ndvi.tiff"              
+clms_path = "global_ndvi.tiff"              
 dekadal_ndvi_path = "ndvi_dekadal_august_2025_.tif"
 output_filled_path = "ndvi_dekadal_august_2025__filled.tif"
 
