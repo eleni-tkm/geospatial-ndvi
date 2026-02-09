@@ -74,7 +74,7 @@ Now you can run the script.
 # Outputs
 If the function call remain as it is the outputs should be:
 - `ndvi_dekadal_august_2025_.tif`: a 10-daily NDVI composite product from Sentinel-2 L2A limited temporaly by `"2025-08-01" - "2025-08-31"` and limited spatially by the `aoi.json`
-- `ndvi_dekadal_august_2025__filled.tif`: a 10-daily NDVI composite product from Sentinel-2 L2A limited temporaly by `"2025-08-01" - "2025-08-31"`, limited spatially by the `aoi.json` and gap-filled by a CLMS product (Dataset: `ndvi-lts_global_1km_10daily_v2`, raster: `c_gls_NDVI-MEDIAN-LTS_1999-2017-0901_GLOBE_VGT-PROBAV_V2.2.1`)
+- `ndvi_dekadal_august_2025__filled.tif`: a 10-daily NDVI composite product from Sentinel-2 L2A limited temporaly by `"2025-08-01" - "2025-08-31"`, limited spatially by the `aoi.json` and gap-filled by a CLMS product (Dataset: `ndvi_global_300m_10daily_v3)
 
 ### Part 2
 Part 2 includes a conceptual workflow describing the steps to onboard data efficiently using the Sentinel Hub BYOC API. The link was created using [Canva](https://www.canva.com/)
