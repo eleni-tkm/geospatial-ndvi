@@ -9,8 +9,7 @@ The script performs cloud-masking utilizing the [Scene Classification](https://c
 - Cloud high probability
 - Thin cirrus
 
-Moreover, the script utilizes the `ndvi-lts_global_1km_10daily_v3` product and specifically the raster: `c_gls_NDVI-MEDIAN-LTS_1999-2017-0901_GLOBE_VGT-PROBAV_V2.2.1.tiff` to fill remaining
-data gaps in the 10-daily NDVI composite 
+Moreover, the script utilizes the `ndvi_global_300m_10daily_v3` product to fill remaining data gaps in the 10-daily NDVI composite 
 
 #### The repository includes
 - The `assessment.py` which is the python script that contains all the logic
