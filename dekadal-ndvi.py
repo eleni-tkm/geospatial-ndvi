@@ -4,7 +4,7 @@ import openeo
 from openeo.processes import array_interpolate_linear
 
 
-def generate_dekadal_ndvi_with_clms(aoi_path, start_date, end_date):
+def generate_dekadal_ndvi(aoi_path, start_date, end_date):
     # Establishing connection to CDSE with openEO
     conn = openeo.connect("https://openeofed.dataspace.copernicus.eu").authenticate_oidc()
 
@@ -49,7 +49,7 @@ def generate_dekadal_ndvi_with_clms(aoi_path, start_date, end_date):
     job.get_results().download_files(r"C:\Users\HP-122024\Desktop\assessment")
 	
 # Call the function
-generate_dekadal_ndvi_with_clms(
+generate_dekadal_ndvi(
     aoi_path="data/aoi.json",
     start_date="2025-08-01",
     end_date="2025-08-31",
