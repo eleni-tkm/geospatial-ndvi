@@ -1,4 +1,4 @@
-# 10-daily NDVI composite with openeo and python Repository
+# 10‑daily NDVI composite products with openEO and Python
 ### Part 1
 This repo utilizes the **openEO API** and introduces a **cloud‑native geospatial workflow** to compute 10‑daily NDVI composite products from Sentinel‑2 L2A data for a given date range and AOI.
 Since satellite revisits are irregular, an interpolation method is implemented to produce data on exactly the 1st, 11th, and 21st of each month (the
