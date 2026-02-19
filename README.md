@@ -13,9 +13,9 @@ The script performs cloud-masking utilizing the [Scene Classification](https://c
 
 
 #### The repository includes
-- The `assessment.py` which is the python script that contains all the logic
+- The `dekadal-ndvi.py` which is the python script that contains all the logic
 - A folder called `'data'`, in which there is the file `aoi.json` that contains the geometry of the area of interest and it is used to limit our spatial extend
-- This `README.md` file that contains further specifications and instructions on how to run the `assessment.py`
+- This `README.md` file that contains further specifications and instructions on how to run the `dekadal-ndvi.py`
 - A link to a conceptual workflow expalining the overall process to onboard data efficiently using the Sentinel Hub BYOC API (see Part 2 at the end of `README.md`)
 
 # Other Specifications - To run this script you need:
@@ -28,7 +28,7 @@ The script performs cloud-masking utilizing the [Scene Classification](https://c
 
 - To parametrize the function please modify lines 57-61:
   ```
-  generate_dekadal_ndvi_with_clms(
+  generate_dekadal_ndvi(
       aoi_path="data/aoi.json",
       start_date="2025-07-24",
       end_date="2025-08-31",
@@ -40,8 +40,8 @@ The script performs cloud-masking utilizing the [Scene Classification](https://c
 - Open Anaconda Prompt 
 - Type: `conda env create -f path\to\environment.yml --name <NameOfYourEnvironment>`
 - Activate your environment with `conda activate <NameOfYourEnvironment>`
-- Cd to the folder in your PC that contains the clone of the repository `cd path\to\assessment.py`
-- Type `python assessment.py`
+- Cd to the folder in your PC that contains the clone of the repository `cd path\to\dekadal-ndvi.py`
+- Type `python dekadal-ndvi.py`
 
 ## Warning!
 If this error occurs: 
