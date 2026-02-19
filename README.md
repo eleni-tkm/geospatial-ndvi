@@ -85,6 +85,7 @@ You can find the workflow [here](https://www.canva.com/design/DAHApMHdwdk/8I58Nm
 
 # Further Improvements
 - Use logger to save errors and warnings
+- Add the Python `if __name__ == "__main__"` idiom to prevent execution at import time
 - Handle NaN values at the edges
 - Add more exceptions
 - Further code improving and formatting
