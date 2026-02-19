@@ -25,7 +25,7 @@ def generate_dekadal_ndvi_with_clms(aoi_path, start_date, end_date):
     nir = s2.band("B08") / 10000.0
     scl = s2.band("SCL")
 
-    # Mask clouds from the categorical SCL 6, 8, 9, 10
+    # Mask clouds from the categorical SCL 3, 6, 8, 9, 10
     cloud_mask = (scl == 8) | (scl == 9) | (scl == 10) | (scl == 3) | (scl == 6)
     valid_mask = ~cloud_mask
     valid_mask_10m = valid_mask.resample_cube_spatial(red)
