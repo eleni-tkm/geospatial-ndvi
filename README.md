@@ -74,6 +74,13 @@ If the function call remain as it is the outputs should be:
 - `ndvi_dekadal_august_2025_.tif`: a 10-daily NDVI composite product from Sentinel-2 L2A limited temporaly by `"2025-08-01" - "2025-08-31"` and limited spatially by the `aoi.json`
 - `ndvi_dekadal_august_2025__filled.tif`: a 10-daily NDVI composite product from Sentinel-2 L2A limited temporaly by `"2025-08-01" - "2025-08-31"`, limited spatially by the `aoi.json` and gap-filled by a CLMS product (Dataset: `ndvi_global_300m_10daily_v3)
 
+# The code in images
+### Visualizing important parts of the code and proposing ideas
+<img width="1920" height="1080" alt="Initial DataCube" src="https://github.com/user-attachments/assets/0e8daf7a-f08c-4dff-b7b9-f2b65ed40cc1" />
+<img width="1920" height="1080" alt="Initial DataCube(2)" src="https://github.com/user-attachments/assets/1c3826ca-691a-4f52-a6f8-f276b904bcb3" />
+
+
+
 ### Part 2
 Part 2 includes a conceptual workflow describing the steps to onboard data efficiently using the Sentinel Hub BYOC API. The link was created using [Canva](https://www.canva.com/)
 You can find the workflow [here](https://www.canva.com/design/DAHApMHdwdk/8I58NmAHh-QdGZAbVoC_RQ/view?utm_content=DAHApMHdwdk&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h0935883c7f).
