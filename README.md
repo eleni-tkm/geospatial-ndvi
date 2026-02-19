@@ -22,10 +22,9 @@ Moreover, the script utilizes the `ndvi_global_300m_10daily_v3` product to fill 
 - Access to Anaconda prompt. A ligther version of Anaconda is [Miniconda](https://www.anaconda.com/docs/getting-started/miniconda/main)
 - An account in CDSE
 - To be logged in the [Sentinel Browser](https://browser.dataspace.copernicus.eu/?zoom=5&lat=50.14875&lng=20.78613&themeId=DEFAULT-THEME&visualizationUrl=U2FsdGVkX1%2B2VejemOuCIwdo1Phlva9%2BkG73C62wtZA5uGiujkpcwM9B6bLkBw9p7CMsx7dVEYlEneQcMvIKppUH6oBhTbJyiRoSjN5MVbR48BgQQAPl6TorIkTf%2FX%2FO&datasetId=COPERNICUS_CLMS_NDVI_300M_10DAILY_V3&fromTime=2025-08-11T00%3A00%3A00.000Z&toTime=2025-08-11T23%3A59%3A59.999Z&layerId=NDVI&demSource3D=%22MAPZEN%22&cloudCoverage=30&dateMode=SINGLE&clmsSelectedPath=COPERNICUS_CLMS_NDVI_300M_10DAILY_V3&clmsSelectedCollection=COPERNICUS_CLMS_NDVI_300M_10DAILY_V3)
-or use the generated token and confirm identity
-- Since the Copernicus Land Monitoring Service (CLMS) - CLMS 300m product **is not exposed via the openEO API**, to run this code successfuly the user needs to:
-  - **Manually download** the file `c_gls_NDVI300_202508110000_GLOBE_OLCI_V3.0.1_cog` from the [Sentinel Browser](link.dataspace.copernicus.eu/0ytz)
-  - Save it as "global_ndvi.tiff" **in the same folder where the script exists**. This file does not exists in this repository.
+or use the generated token and confirm identity- Since the Copernicus Land Monitoring Service (CLMS) - CLMS 300m product **is not exposed via the openEO API**, to run this code successfuly the user needs to:
+- **Manually download** the file `c_gls_NDVI300_202508110000_GLOBE_OLCI_V3.0.1_cog` from the [Sentinel Browser](link.dataspace.copernicus.eu/0ytz)
+- Save it as "global_ndvi.tiff" **in the same folder where the script exists**. This file does not exists in this repository.
 - Inside the same folder with the script, a subfolder called 'data' should exists which contains the aoi.json. This is included in the repository
 - The `.yml` file is an **exact copy** (including python version) of the environment where the script was created and it will be used to create a clone-environment via Anaconda prompt
 
