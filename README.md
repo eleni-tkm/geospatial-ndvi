@@ -90,4 +90,6 @@ You can find the workflow [here](https://www.canva.com/design/DAHApMHdwdk/8I58Nm
 - Add more exceptions
 - Further code improving and formatting
 - Add sanity tests (visualize the data, print statistics)
+- Analysis of the results
+- Explain limitations
 
