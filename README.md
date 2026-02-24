@@ -84,6 +84,7 @@ Part 2 includes a conceptual workflow describing the steps to onboard data effic
 You can find the workflow [here](https://www.canva.com/design/DAHApMHdwdk/8I58NmAHh-QdGZAbVoC_RQ/view?utm_content=DAHApMHdwdk&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h0935883c7f).
 
 # Further Improvements
+- Avoid hard‑coded function parameters
 - Use logger to save errors and warnings
 - Add the Python `if __name__ == "__main__"` idiom to prevent execution at import time
 - Handle NaN values at the edges
