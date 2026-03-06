@@ -74,8 +74,8 @@ If the function call remain as it is the outputs should be:
 
 # The code in images
 ### Visualizing important parts of the code and proposing ideas
-<img width="1920" height="1080" alt="Initial DataCube(3)" src="https://github.com/user-attachments/assets/80e9abea-8b85-44a0-adac-23ed7eb61c16" />
-<img width="1920" height="1080" alt="Initial DataCube(4)" src="https://github.com/user-attachments/assets/5482a0dd-bac0-486d-b942-43bb9bfc9501" />
+<img width="1920" height="1080" alt="Initial DataCube(5)" src="https://github.com/user-attachments/assets/3e600633-61b6-43c3-82bd-11b22323fc10" />
+<img width="1920" height="1080" alt="Initial DataCube(6)" src="https://github.com/user-attachments/assets/a4dbe691-5619-42fd-afa8-b26e42fce788" />
 
 
 
